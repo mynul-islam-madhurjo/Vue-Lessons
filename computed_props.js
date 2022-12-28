@@ -17,7 +17,7 @@
  */
 
 //Method vs Computed Difference
-/* var vm1 = new Vue({
+/*  var vm1 = new Vue({
     el: '#computed-methods',
     data: {
         name:'Hello'
@@ -32,4 +32,22 @@
             return Math.random();
         }
     }
-}) */
+})  */
+
+var vm2 = new vue({
+    el: "#computed-get",
+    data: {
+        fname: 'Mynul',
+        lname: 'Islam'
+    },
+    methods: {
+
+    },
+    computed: {
+        fullname: {
+            get() {
+                return this.fname + " " + this.lname;
+            }
+        }
+    }
+});

@@ -32,9 +32,15 @@
         <h1 style="color: blue;"> This is a call from Computed Example {{ getComputedData}} </h1>
         <h1 style="color: red;"> This is another call from Method Example {{ getMethodData()}}</h1>
         <h1 style="color: blue;"> This is another call from Computed Example {{ getComputedData}} </h1>
-    </div>  -->
+    </div>   -->
 
-    
+    <!-- Get and Set -->
+    <div id="computed-get">
+        <input type="text" v-model="fullname">
+        First Name : {{fname}}
+        Last Name : {{lname}}
+    </div>
+
     <script type = "text/javascript" src="computed_props.js"></script>
 
 </body>
