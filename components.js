@@ -1,5 +1,5 @@
 // Using images
-/*  var app = new Vue({
+  var app = new Vue({
     el: "#app",
     data: {
         name: 'Mynul',
@@ -21,10 +21,10 @@
         }
 
     }
-}) */
+}) 
 
 // Vue js component code
-/*Vue.component('testcomponent', {
+Vue.component('testcomponent', {
     template: '<div><h1>Hi!</h1></div>'
 });
 
@@ -33,11 +33,11 @@ var a = new Vue({
 });
 var a = new Vue({
     el: 'second_component'
-})*/
+})
 
 
 //calling obejct with vue
-/* var _obj = { fname: "Mynul", lname: "Islam"};
+ var _obj = { fname: "Mynul", lname: "Islam"};
 
 var vm = new Vue({
     data: _obj
@@ -45,10 +45,10 @@ var vm = new Vue({
 
  console.log(vm.fname);
  console.log(vm.$data);
- */
+ 
 
 // Vue js component code with methods calling  
- /* Vue.component('testcomponent', {
+ Vue.component('testcomponent', {
             // template: '<div v-on:mouseover = "changename()" v-on:mouseout = "originalname();"><h1>Custom Component created by <span id = "name">{{name}}</span></h1></div>',
             template: '<div v-on:click = "changename()" v-on:mouseout = "originalname();"><h1>Custom Component created by <span id = "name">{{name}}</span></h1></div>',
             data: function () {
@@ -72,4 +72,4 @@ var vm = new Vue({
             el: "#second_component"
         }) 
 
-         */
+         
