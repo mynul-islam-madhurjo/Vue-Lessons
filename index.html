@@ -8,26 +8,33 @@
 
 <body>
 
-<!--     Using image with vue js-->
-<!--        <div id="app" style="text-align: center;">
+
+    <style>
+        .active {
+            background-color: crimson;
+        }
+    </style>
+
+    <!--     Using image with vue js-->
+    <!--        <div id="app" style="text-align: center;">
         <h1>{{ getData() }}</h1>
         <img v-bind:src="imgsrc" width="300" height="250" />
     </div>-->
 
     <!-- HTML Reusability Component Component js -->
-<!--     <div id="first_component" ><testcomponent></testcomponent></div>
+    <!--     <div id="first_component" ><testcomponent></testcomponent></div>
     <div id="second_component" ><testcomponent></testcomponent></div>  -->
- 
+
     <!-- form vmodel with computed  -->
-<!--     <div id = "computed_props">
+    <!--     <div id = "computed_props">
         FirstName : <input type = "text" required v-model = "firstname"  /> <br/><br/>
         LastName : <input type = "text" required v-model = "lastname"/> <br/><br/>
         <h1>My name is {{ firstname }}</h1>
         <h1>Full Name : {{ getfullname}}</h1>
      </div> -->
 
-     <!-- Method vs Computed Example -->
-<!--     <div id="computed-methods">
+    <!-- Method vs Computed Example -->
+    <!--     <div id="computed-methods">
         <h1 style="color: red;"> This is a call from Method Example {{ getMethodData()}}</h1>
         <h1 style="color: blue;"> This is a call from Computed Example {{ getComputedData}} </h1>
         <h1 style="color: red;"> This is another call from Method Example {{ getMethodData()}}</h1>
@@ -35,7 +42,7 @@
     </div>   -->
 
     <!-- Get and Set -->
-<!--     <div id="computed-get">
+    <!--     <div id="computed-get">
         <input type="text" v-model="fullname"> <br><br>
         First Name : {{fname}} <br><br>
         Last Name : {{lname}}
@@ -46,18 +53,24 @@
         Kilometers: <input type="text" v-model="kilometers">
         Meters: <input type="text" v-model="meters">
     </div> -->
-    
+
     <!-- Data Binding -->
     <div id="databind">
         <a href="hreflink" target="_blank">Click Me </a> <br><br>
         <a href={{hreflink}} target="_blank">Click Me</a> <br><br>
-        <a :href="hreflink" target="_blank">Click Me</a> 
-        <a v-bind:href="hreflink" target="_blank">Click Me</a> 
+        <a :href="hreflink" target="_blank">Click Me</a> <br><br>
+        <a v-bind:href="hreflink" target="_blank">Click Me</a>
     </div>
 
+    
+        <!-- class binding   -->
+        <div id="classbind" :class="{active:isactive}">
+            <b>{{ title }}</b>
+        </div>
 
 
-    <script type = "text/javascript" src="binding.js"></script>
+
+    <script type="text/javascript" src="binding.js"></script>
 
 </body>
 
