@@ -11,8 +11,11 @@
 
     <style>
         .active {
-            background-color: crimson;
+            background-color: rgb(0, 255, 64);
         }
+        .displayError{
+            color: #ff0000;
+         }
     </style>
 
     <!--     Using image with vue js-->
@@ -64,7 +67,12 @@
 
     
         <!-- class binding   -->
-        <div id="classbind" :class="{active:isactive}">
+<!--         <div id="classbind" :class="{active:isactive}">
+            <b>{{ title }}</b>
+        </div> -->
+
+        <!-- Multiple class binding   -->
+        <div id="classbind" :class="{active:isactive,displayError:hasdisplayError}">
             <b>{{ title }}</b>
         </div>
 

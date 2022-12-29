@@ -15,7 +15,8 @@ var a = new Vue({
 var b = new Vue({
     el: '#classbind',
     data: {
-        title: 'This is class binding',
-        isactive: true
+        title: 'This is a multi class binding',
+        isactive: true,
+        hasdisplayError: true
     }
 });
