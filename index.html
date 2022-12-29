@@ -42,15 +42,22 @@
     </div> -->
 
     <!-- Using watch property which will call two functions simultaneously -->
-
-    <div id="watch-props">
+    <!-- <div id="watch-props">
         Kilometers: <input type="text" v-model="kilometers">
         Meters: <input type="text" v-model="meters">
+    </div> -->
+    
+    <!-- Data Binding -->
+    <div id="databind">
+        <a href="hreflink" target="_blank">Click Me </a> <br><br>
+        <a href={{hreflink}} target="_blank">Click Me</a> <br><br>
+        <a :href="hreflink" target="_blank">Click Me</a> 
+        <a v-bind:href="hreflink" target="_blank">Click Me</a> 
     </div>
 
 
 
-    <script type = "text/javascript" src="watch_props.js"></script>
+    <script type = "text/javascript" src="binding.js"></script>
 
 </body>
 

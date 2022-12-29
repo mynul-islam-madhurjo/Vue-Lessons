@@ -1,3 +1,9 @@
+/* watch property helps to listen to the component data and
+ run multiple methods whenever it requires a change for a 
+ particular property
+
+*/
+
 var a = new Vue({
     el: '#watch-props',
     data: {
