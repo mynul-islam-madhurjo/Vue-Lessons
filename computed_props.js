@@ -34,7 +34,7 @@
     }
 })  */
 
-var vm2 = new vue({
+var vm2 = new Vue({
     el: "#computed-get",
     data: {
         fname: 'Mynul',
@@ -45,8 +45,15 @@ var vm2 = new vue({
     },
     computed: {
         fullname: {
+            // It will give a value in input field
             get() {
                 return this.fname + " " + this.lname;
+            },
+            // Dynamic input field
+            set(name){
+                var newName = name.split(' ');
+                this.fname = newName[0];
+                this.lname = newName[1];
             }
         }
     }
