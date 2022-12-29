@@ -1,6 +1,6 @@
 
 // This is a computed example with form
-/* var vm = new Vue({
+ var vm = new Vue({
     el: '#computed_props',
     data: {
         firstname: "",
@@ -13,11 +13,10 @@
             return this.firstname + " " + this.lastname;
         }
     }
-})
- */
+});
 
 //Method vs Computed Difference
-/*  var vm1 = new Vue({
+  var vm1 = new Vue({
     el: '#computed-methods',
     data: {
         name:'Hello'
@@ -32,8 +31,9 @@
             return Math.random();
         }
     }
-})  */
+});  
 
+// Computed get and set
 var vm2 = new Vue({
     el: "#computed-get",
     data: {
@@ -57,4 +57,4 @@ var vm2 = new Vue({
             }
         }
     }
-});
+}); 

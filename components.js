@@ -21,7 +21,7 @@
         }
 
     }
-}) 
+}); 
 
 // Vue js component code
 Vue.component('testcomponent', {
@@ -33,7 +33,7 @@ var a = new Vue({
 });
 var a = new Vue({
     el: 'second_component'
-})
+});
 
 
 //calling obejct with vue
@@ -70,6 +70,6 @@ var vm = new Vue({
         });
         var vm1 = new Vue({
             el: "#second_component"
-        }) 
+        });
 
          

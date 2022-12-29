@@ -35,13 +35,22 @@
     </div>   -->
 
     <!-- Get and Set -->
-    <div id="computed-get">
+<!--     <div id="computed-get">
         <input type="text" v-model="fullname"> <br><br>
         First Name : {{fname}} <br><br>
         Last Name : {{lname}}
+    </div> -->
+
+    <!-- Using watch property which will call two functions simultaneously -->
+
+    <div id="watch-props">
+        Kilometers: <input type="text" v-model="kilometers">
+        Meters: <input type="text" v-model="meters">
     </div>
 
-    <script type = "text/javascript" src="computed_props.js"></script>
+
+
+    <script type = "text/javascript" src="watch_props.js"></script>
 
 </body>
 
