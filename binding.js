@@ -33,3 +33,11 @@ var  c = new Vue({
     }
 });
 
+var d = new Vue({
+    el: '#databinding',
+    data: {
+        name: '',
+        details: '',
+        checkbox: false
+    }
+})

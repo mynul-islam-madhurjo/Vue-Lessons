@@ -81,10 +81,25 @@
         </div> -->
 
 <!--         Inline css styles -->
-        <div id="classbindinginLine">
+<!--         <div id="classbindinginLine">
             <div v-bind:style="styleobj"> {{title}}</div>
-        </div>
+        </div> -->
 
+        <!-- Input Data Binding -->
+        <div id="databinding">
+            <h1>Enter Name</h1> <br><br>
+            <input v-model="name" placeholder="Enter Name">
+            <h1>Your Name is {{name}}</h1>
+
+            <textarea v-model="details"></textarea>
+            <h1>The deatils is {{details}}</h1>
+
+            <input type="checkbox" v-model="checkbox">
+            <h1> It is checked {{checkbox}}</h1>
+
+
+        </div>
+        
 
     <script type="text/javascript" src="binding.js"></script>
 
