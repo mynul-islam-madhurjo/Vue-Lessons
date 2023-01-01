@@ -26,7 +26,10 @@ var  c = new Vue({
     el: '#classbindinginLine',
     data: {
         title: 'This is inline CSS',
-        activeColor: 'red',
-        fontSize :'30'
+        styleobj: {
+            color: 'red',
+            fontSize: '40px'
+        }
     }
 });
+
