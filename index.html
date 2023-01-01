@@ -10,6 +10,10 @@
 
 
     <style>
+        .info {
+            margin:auto;
+            padding: auto;
+         }
         .active {
             background-color: rgb(0, 255, 64);
         }
@@ -58,12 +62,12 @@
     </div> -->
 
     <!-- Data Binding -->
-    <div id="databind">
+<!--     <div id="databind">
         <a href="hreflink" target="_blank">Click Me </a> <br><br>
         <a href={{hreflink}} target="_blank">Click Me</a> <br><br>
         <a :href="hreflink" target="_blank">Click Me</a> <br><br>
         <a v-bind:href="hreflink" target="_blank">Click Me</a>
-    </div>
+    </div> -->
 
     
         <!-- class binding   -->
@@ -72,11 +76,14 @@
         </div> -->
 
         <!-- Multiple class binding   -->
-        <div id="classbind" :class="{active:isactive,displayError:hasdisplayError}">
+<!--         <div id="classbind" class="info" :class="{active:isactive,displayError:hasdisplayError}">
             <b>{{ title }}</b>
+        </div> -->
+
+<!--         Inline css styles -->
+        <div id="classbindinginLine">
+            <div v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"> {{title}}</div>
         </div>
-
-
 
     <script type="text/javascript" src="binding.js"></script>
 

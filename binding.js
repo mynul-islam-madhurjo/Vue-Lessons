@@ -20,3 +20,13 @@ var b = new Vue({
         hasdisplayError: true
     }
 });
+
+// binding inline css styles
+var  c = new Vue({
+    el: '#classbindinginLine',
+    data: {
+        title: 'This is inline CSS',
+        activeColor: 'red',
+        fontSize :'30'
+    }
+});
