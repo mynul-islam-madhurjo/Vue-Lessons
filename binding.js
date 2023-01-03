@@ -41,3 +41,4 @@ var d = new Vue({
         checkbox: false
     }
 })
+
